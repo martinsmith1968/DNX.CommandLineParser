@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNX.CommandLineParser", "DNX.CommandLineParser\DNX.CommandLineParser.csproj", "{A163914F-4BA8-44C3-99F4-860693F72E00}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{7D68C95E-29A5-4AC0-8740-03AD47C32F83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.DNX.CommandLineParser", "Test.DNX.CommandLineParser\Test.DNX.CommandLineParser.csproj", "{17293F0A-804A-4C01-BDCF-EB0FB197AD0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,10 @@ Global
 		{A163914F-4BA8-44C3-99F4-860693F72E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A163914F-4BA8-44C3-99F4-860693F72E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A163914F-4BA8-44C3-99F4-860693F72E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17293F0A-804A-4C01-BDCF-EB0FB197AD0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17293F0A-804A-4C01-BDCF-EB0FB197AD0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17293F0A-804A-4C01-BDCF-EB0FB197AD0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17293F0A-804A-4C01-BDCF-EB0FB197AD0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

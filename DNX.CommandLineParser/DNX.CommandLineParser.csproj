@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>a163914f-4ba8-44c3-99f4-860693f72e00</ProjectGuid>
+    <ProjectGuid>{A163914F-4BA8-44C3-99F4-860693F72E00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DNX.CommandLineParser</RootNamespace>
@@ -30,24 +30,43 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="DNX.Helpers, Version=1.0.26.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DNX.Helpers.1.0.26\lib\net452\DNX.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Attributes\BaseAttribute.cs" />
+    <Compile Include="Attributes\OptionAttribute.cs" />
+    <Compile Include="Attributes\ParameterAttribute.cs" />
+    <Compile Include="Attributes\SwitchAttribute.cs" />
+    <Compile Include="Configuration\IParserConfigurationCustomisation.cs" />
+    <Compile Include="Errors\BaseOptionError.cs" />
+    <Compile Include="Errors\BaseParserError.cs" />
+    <Compile Include="Errors\InvalidOptionValueError.cs" />
+    <Compile Include="Errors\IParserError.cs" />
+    <Compile Include="Errors\RequiredOptionMissingError.cs" />
+    <Compile Include="Errors\UnknownParameterError.cs" />
+    <Compile Include="Errors\UnknownOptionError.cs" />
+    <Compile Include="Helpers\PropertyHelper.cs" />
+    <Compile Include="Options\DisplayOrderAttribute.cs" />
+    <Compile Include="Options\IOptionDetails.cs" />
+    <Compile Include="Options\OptionDetails.cs" />
+    <Compile Include="Options\OptionType.cs" />
+    <Compile Include="Parser.cs" />
+    <Compile Include="Configuration\ParserConfiguration.cs" />
+    <Compile Include="ParserResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>
